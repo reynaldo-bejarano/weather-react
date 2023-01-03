@@ -22,9 +22,7 @@ const WeatherForm = ({ handleChangeCity }) => {
             <form onSubmit={handleSubmit}>
                 <div className='flex items-center gap-2 w-full'>
                     <input type="text" className='w-11/12 px-2 py-2 rounded-lg 	' onChange={handleChange} placeholder="Ingresa el nombre de la ciudad" />
-                    <div className='bg-gray-200 flex justify-center p-3 rounded-lg'>
-                        <button type='submit'><BiSearchAlt /></button>
-                    </div>
+                    <button type='submit' className='bg-gray-200 flex justify-center p-2 rounded-lg hover:bg-yellow-500'><BiSearchAlt className="text-2xl" /></button>
                 </div>
             </form>
         </div>
